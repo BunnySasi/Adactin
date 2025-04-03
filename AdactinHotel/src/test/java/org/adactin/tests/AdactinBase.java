@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.adactin.pages.AdactinHomePage;
+import org.adactin.pages.SearchHotel;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -19,6 +20,7 @@ public class AdactinBase {
 	public WebDriverManager driverManager;
 	public WebDriver driver;
 	public AdactinHomePage adactinHomePage;
+	public SearchHotel searchHotel;
 	@BeforeSuite
 	public void getProperties() throws IOException {
 		properties = new Properties();
@@ -44,9 +46,10 @@ public class AdactinBase {
 	@BeforeTest
 	public void launch() {
 		adactinHomePage = new AdactinHomePage(driver);
+		searchHotel = new SearchHotel(driver);
 	}
 	@AfterTest
 	public void exit() {
-		
+//		driver.quit();
 	}
 }
