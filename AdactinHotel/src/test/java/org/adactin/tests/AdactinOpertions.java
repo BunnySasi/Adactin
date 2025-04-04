@@ -1,5 +1,6 @@
 package org.adactin.tests;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class AdactinOpertions extends AdactinBase {
@@ -20,11 +21,11 @@ public class AdactinOpertions extends AdactinBase {
 		searchHotel.RadioClick("2");
 		searchHotel.clickContinue();
 	}
-	@Test
+	@Test(groups = "Login")
 	public void AdactinLogin() throws Exception {
 		adactinHomePage.loginPerform(properties.getProperty("username"), properties.getProperty("password"));
 	}
-	@Test(dependsOnMethods = {"AdactinLogin"})
+	@Test(dependsOnMethods = {"AdactinLogin"},groups = "Login")
 	public void SearchHotel() throws Exception {
 		searchHotel.selectLocation("London");
 		searchHotel.selectHotels("- Select Hotel -");
@@ -37,9 +38,22 @@ public class AdactinOpertions extends AdactinBase {
 		searchHotel.Search();
 		
 	}
-	@Test(dependsOnMethods = {"SearchHotel"})
+	@Test(dependsOnMethods = {"SearchHotel"},dependsOnGroups = {"Login"})
 	public void selectHotel() throws Exception {
 		searchHotel.RadioClick("2");
 		searchHotel.clickContinue();
+	}
+	@Test(dataProvider = "data_one",dependsOnMethods = {"AdactinLogin"})
+	public void SearchHotels(String loactionName,String HotelName) throws Exception {
+		searchHotel.selectLocation(loactionName);
+		searchHotel.selectHotels(HotelName);
+	}
+	@DataProvider(name = "data_one")
+	public Object[][]getDataProviders(){
+		return new Object[][] {
+			{"London","Hotel Creek"},
+			{"London","Hotel Creek"},
+			{"London","Hotel Creek"}
+		};
 	}
 }

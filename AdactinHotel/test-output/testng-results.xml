@@ -1,33 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+<testng-results ignored="3" total="7" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-04T11:23:18 IST" name="Default suite" finished-at="2025-04-04T11:23:21 IST" duration-ms="3555">
+  <suite started-at="2025-04-04T12:33:16 IST" name="Default suite" finished-at="2025-04-04T12:33:18 IST" duration-ms="1986">
     <groups>
+      <group name="Login">
+        <method signature="AdactinOpertions.AdactinLogin()[pri:0, instance:org.adactin.tests.AdactinOpertions@38d8f54a]" name="AdactinLogin" class="org.adactin.tests.AdactinOpertions"/>
+      </group> <!-- Login -->
     </groups>
-    <test started-at="2025-04-04T11:23:18 IST" name="Default test" finished-at="2025-04-04T11:23:21 IST" duration-ms="3555">
+    <test started-at="2025-04-04T12:33:16 IST" name="Default test" finished-at="2025-04-04T12:33:18 IST" duration-ms="1986">
       <class name="org.adactin.tests.AdactinOpertions">
-        <test-method is-config="true" signature="getProperties()[pri:0, instance:org.adactin.tests.AdactinOpertions@4ec4f3a0]" started-at="2025-04-04T11:23:14 IST" name="getProperties" finished-at="2025-04-04T11:23:18 IST" duration-ms="3889" status="PASS">
+        <test-method is-config="true" signature="getProperties()[pri:0, instance:org.adactin.tests.AdactinOpertions@38d8f54a]" started-at="2025-04-04T12:33:11 IST" name="getProperties" finished-at="2025-04-04T12:33:16 IST" duration-ms="4334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProperties -->
-        <test-method is-config="true" signature="launch()[pri:0, instance:org.adactin.tests.AdactinOpertions@4ec4f3a0]" started-at="2025-04-04T11:23:18 IST" name="launch" finished-at="2025-04-04T11:23:18 IST" duration-ms="55" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:org.adactin.tests.AdactinOpertions@38d8f54a]" started-at="2025-04-04T12:33:16 IST" name="launch" finished-at="2025-04-04T12:33:16 IST" duration-ms="62" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="AdactinLogin()[pri:0, instance:org.adactin.tests.AdactinOpertions@4ec4f3a0]" started-at="2025-04-04T11:23:18 IST" name="AdactinLogin" finished-at="2025-04-04T11:23:19 IST" duration-ms="1000" status="PASS">
+        <test-method signature="AdactinLogin()[pri:0, instance:org.adactin.tests.AdactinOpertions@38d8f54a]" started-at="2025-04-04T12:33:16 IST" name="AdactinLogin" finished-at="2025-04-04T12:33:17 IST" duration-ms="1091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AdactinLogin -->
-        <test-method signature="SearchHotel()[pri:0, instance:org.adactin.tests.AdactinOpertions@4ec4f3a0]" started-at="2025-04-04T11:23:19 IST" name="SearchHotel" finished-at="2025-04-04T11:23:21 IST" depends-on-methods="org.adactin.tests.AdactinOpertions.AdactinLogin" duration-ms="2060" status="PASS">
+        <test-method signature="SearchHotels(java.lang.String,java.lang.String)[pri:0, instance:org.adactin.tests.AdactinOpertions@38d8f54a]" started-at="2025-04-04T12:33:17 IST" name="SearchHotels" data-provider="data_one" finished-at="2025-04-04T12:33:17 IST" depends-on-methods="org.adactin.tests.AdactinOpertions.AdactinLogin" duration-ms="349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[London]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchHotel -->
-        <test-method signature="selectHotel()[pri:0, instance:org.adactin.tests.AdactinOpertions@4ec4f3a0]" started-at="2025-04-04T11:23:21 IST" name="selectHotel" finished-at="2025-04-04T11:23:21 IST" depends-on-methods="org.adactin.tests.AdactinOpertions.SearchHotel" duration-ms="348" status="PASS">
+        </test-method> <!-- SearchHotels -->
+        <test-method signature="SearchHotels(java.lang.String,java.lang.String)[pri:0, instance:org.adactin.tests.AdactinOpertions@38d8f54a]" started-at="2025-04-04T12:33:17 IST" name="SearchHotels" data-provider="data_one" finished-at="2025-04-04T12:33:17 IST" depends-on-methods="org.adactin.tests.AdactinOpertions.AdactinLogin" duration-ms="140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[London]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectHotel -->
-        <test-method is-config="true" signature="exit()[pri:0, instance:org.adactin.tests.AdactinOpertions@4ec4f3a0]" started-at="2025-04-04T11:23:21 IST" name="exit" finished-at="2025-04-04T11:23:21 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- SearchHotels -->
+        <test-method signature="SearchHotels(java.lang.String,java.lang.String)[pri:0, instance:org.adactin.tests.AdactinOpertions@38d8f54a]" started-at="2025-04-04T12:33:17 IST" name="SearchHotels" data-provider="data_one" finished-at="2025-04-04T12:33:18 IST" depends-on-methods="org.adactin.tests.AdactinOpertions.AdactinLogin" duration-ms="230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[London]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchHotels -->
+        <test-method is-config="true" signature="exit()[pri:0, instance:org.adactin.tests.AdactinOpertions@38d8f54a]" started-at="2025-04-04T12:33:18 IST" name="exit" finished-at="2025-04-04T12:33:18 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->

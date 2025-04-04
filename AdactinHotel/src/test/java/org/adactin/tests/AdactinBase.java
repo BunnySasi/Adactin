@@ -2,6 +2,7 @@ package org.adactin.tests;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.adactin.pages.AdactinHomePage;
@@ -45,6 +46,7 @@ public class AdactinBase {
 	}
 	@BeforeTest
 	public void launch() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
 		adactinHomePage = new AdactinHomePage(driver);
 		searchHotel = new SearchHotel(driver);
 	}
