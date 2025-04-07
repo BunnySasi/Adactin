@@ -6,6 +6,7 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.adactin.pages.AdactinHomePage;
+import org.adactin.pages.BookAHotel;
 import org.adactin.pages.SearchHotel;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,6 +23,7 @@ public class AdactinBase {
 	public WebDriver driver;
 	public AdactinHomePage adactinHomePage;
 	public SearchHotel searchHotel;
+	public BookAHotel aHotel;
 	@BeforeSuite
 	public void getProperties() throws IOException {
 		properties = new Properties();
@@ -46,9 +48,10 @@ public class AdactinBase {
 	}
 	@BeforeTest
 	public void launch() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8000));
 		adactinHomePage = new AdactinHomePage(driver);
 		searchHotel = new SearchHotel(driver);
+		aHotel = new BookAHotel(driver);
 	}
 	@AfterTest
 	public void exit() {

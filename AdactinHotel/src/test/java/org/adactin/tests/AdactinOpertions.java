@@ -36,7 +36,13 @@ public class AdactinOpertions extends AdactinBase {
 		searchHotel.selectAdultsPerRoom("3 - Three");
 		searchHotel.selectChildrenPerRoom("2 - Two");
 		searchHotel.Search();
-		
+		searchHotel.RadioClick("3");
+		searchHotel.clickContinue();
+		aHotel.clickBookNow();
+		aHotel.enterFirstName("Helos!");
+		aHotel.clickBookNow();
+		aHotel.enterLastName("llll");
+		aHotel.createAddress("Hello!!,World!!,How is your day going on??");
 	}
 	@Test(dependsOnMethods = {"SearchHotel"},dependsOnGroups = {"Login"})
 	public void selectHotel() throws Exception {

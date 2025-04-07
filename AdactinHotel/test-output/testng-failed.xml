@@ -10,7 +10,6 @@
           <include name="getProperties"/>
           <include name="exit"/>
           <include name="AdactinLogin"/>
-          <include name="testName" invocation-numbers="0"/>
         </methods>
       </class> <!-- org.adactin.tests.AdactinOpertions -->
     </classes>
