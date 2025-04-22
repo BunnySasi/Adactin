@@ -9,6 +9,7 @@ public class AdactinOpertions extends AdactinBase {
 	public void firstOne() throws Exception {
 		adactinHomePage.loginPerform(properties.getProperty("username"), properties.getProperty("password"));
 		adactinHomePage.verifyUsername();
+		takeScreenshotAlways(driver, "firstOnePicTest");
 		searchHotel.selectLocation("London");
 		searchHotel.selectHotels("- Select Hotel -");
 		searchHotel.selectRoomType("- Select Room Type -");
@@ -35,6 +36,7 @@ public class AdactinOpertions extends AdactinBase {
 		searchHotel.selectCheckOutDate("09/02/2000");
 		searchHotel.selectAdultsPerRoom("3 - Three");
 		searchHotel.selectChildrenPerRoom("2 - Two");
+		takeScreenshotAlways(driver,"SearchHotelss!!");
 		searchHotel.Search();
 		searchHotel.RadioClick("3");
 		searchHotel.clickContinue();
@@ -61,5 +63,10 @@ public class AdactinOpertions extends AdactinBase {
 			{"London","Hotel Creek"},
 			{"London","Hotel Creek"}
 		};
+	}
+	@Test
+	public void FaceBook() throws Exception {
+		facebookLocators.performLogin("hello@gmail.com","1222");
+		takeScreenshotAlways(driver, "FacebookLogin");
 	}
 }

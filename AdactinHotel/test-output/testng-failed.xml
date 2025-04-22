@@ -5,11 +5,10 @@
     <classes>
       <class name="org.adactin.tests.AdactinOpertions">
         <methods>
-          <include name="SearchHotel"/>
           <include name="launch"/>
+          <include name="FaceBook"/>
           <include name="getProperties"/>
           <include name="exit"/>
-          <include name="AdactinLogin"/>
         </methods>
       </class> <!-- org.adactin.tests.AdactinOpertions -->
     </classes>
