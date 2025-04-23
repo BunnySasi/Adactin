@@ -84,10 +84,34 @@ public class Customized {
 		}
 		return driver;
 	}
+	
+	public Properties getPropertiesAccessByName(String name) {
+		properties = new Properties();
+		try {
+			fileInputStream = new FileInputStream(
+					System.getProperty("user.dir") + "\\src\\test\\java\\properties\\"+name+".properties");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			properties.load(fileInputStream);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(properties.getProperty("email_text_"));
+		return properties;
+	}
 
 	@Test
 	public void testName() throws Exception {
 		getPropertiesofPropFiles();
 		performCertainOperations(properties.getProperty("browser"), properties.getProperty("url"));
+	}
+	@Test
+	public void testNames() throws Exception {
+		getPropertiesAccessByName("locators");
+		
 	}
 }

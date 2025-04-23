@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-23T14:50:30 IST" name="Default suite" finished-at="2025-04-23T14:50:34 IST" duration-ms="3701">
+  <suite started-at="2025-04-23T15:17:22 IST" name="Default suite" finished-at="2025-04-23T15:17:22 IST" duration-ms="77">
     <groups>
     </groups>
-    <test started-at="2025-04-23T14:50:30 IST" name="Default test" finished-at="2025-04-23T14:50:34 IST" duration-ms="3701">
-      <class name="org.today.tasks.Base">
-        <test-method signature="testName()[pri:0, instance:org.today.tasks.Base@6379eb]" started-at="2025-04-23T14:50:30 IST" name="testName" finished-at="2025-04-23T14:50:34 IST" duration-ms="3652" status="PASS">
+    <test started-at="2025-04-23T15:17:22 IST" name="Default test" finished-at="2025-04-23T15:17:22 IST" duration-ms="77">
+      <class name="org.today.tasks.Customized">
+        <test-method signature="testNames()[pri:0, instance:org.today.tasks.Customized@294425a7]" started-at="2025-04-23T15:17:22 IST" name="testNames" finished-at="2025-04-23T15:17:22 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testName -->
-      </class> <!-- org.today.tasks.Base -->
+        </test-method> <!-- testNames -->
+      </class> <!-- org.today.tasks.Customized -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
