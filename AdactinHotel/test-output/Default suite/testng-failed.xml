@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.adactin.tests.AdactinOpertions">
+      <class name="org.today.tasks.Base">
         <methods>
-          <include name="launch"/>
-          <include name="FaceBook"/>
-          <include name="getProperties"/>
-          <include name="exit"/>
+          <include name="testName"/>
         </methods>
-      </class> <!-- org.adactin.tests.AdactinOpertions -->
+      </class> <!-- org.today.tasks.Base -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
