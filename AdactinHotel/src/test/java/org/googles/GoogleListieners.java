@@ -25,6 +25,8 @@ public class GoogleListieners implements ITestListener{
 		// TODO Auto-generated method stub
 		String str = result.getName();
 		System.out.println("onTestFailure: "+str);
+		StackTraceElement[] ax = new Throwable().getStackTrace();
+		System.out.println(ax);
 	}
 
 	@Override

@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-06T15:55:32 IST" name="Suite" finished-at="2025-05-06T15:55:37 IST" duration-ms="5098">
+  <suite started-at="2025-05-07T11:28:32 IST" name="Suite" finished-at="2025-05-07T11:28:42 IST" duration-ms="9531">
     <groups>
       <group name="test">
         <method signature="Google.clickGmail()[pri:0, instance:org.googles.Google@223191a6]" name="clickGmail" class="org.googles.Google"/>
@@ -11,21 +11,21 @@
         <method signature="Google.capture()[pri:0, instance:org.googles.Google@223191a6]" name="capture" class="org.googles.Google"/>
       </group> <!-- click -->
     </groups>
-    <test started-at="2025-05-06T15:55:32 IST" name="Test" finished-at="2025-05-06T15:55:37 IST" duration-ms="5098">
+    <test started-at="2025-05-07T11:28:32 IST" name="Test" finished-at="2025-05-07T11:28:42 IST" duration-ms="9531">
       <class name="org.googles.Google">
-        <test-method is-config="true" signature="launch()[pri:0, instance:org.googles.Google@223191a6]" started-at="2025-05-06T15:55:28 IST" name="launch" finished-at="2025-05-06T15:55:32 IST" duration-ms="3388" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:org.googles.Google@223191a6]" started-at="2025-05-07T11:28:22 IST" name="launch" finished-at="2025-05-07T11:28:32 IST" duration-ms="10058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="capture()[pri:0, instance:org.googles.Google@223191a6]" started-at="2025-05-06T15:55:32 IST" name="capture" finished-at="2025-05-06T15:55:32 IST" duration-ms="203" status="PASS">
+        <test-method signature="capture()[pri:0, instance:org.googles.Google@223191a6]" started-at="2025-05-07T11:28:32 IST" name="capture" finished-at="2025-05-07T11:28:33 IST" duration-ms="1146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- capture -->
-        <test-method signature="clickGmail()[pri:0, instance:org.googles.Google@223191a6]" started-at="2025-05-06T15:55:32 IST" name="clickGmail" finished-at="2025-05-06T15:55:37 IST" duration-ms="4787" status="PASS">
+        <test-method signature="clickGmail()[pri:0, instance:org.googles.Google@223191a6]" started-at="2025-05-07T11:28:34 IST" name="clickGmail" finished-at="2025-05-07T11:28:42 IST" duration-ms="7982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickGmail -->
-        <test-method signature="testName()[pri:0, instance:org.googles.Google@223191a6]" started-at="2025-05-06T15:55:37 IST" name="testName" depends-on-groups="test, click" finished-at="2025-05-06T15:55:37 IST" duration-ms="3" status="PASS">
+        <test-method signature="testName()[pri:0, instance:org.googles.Google@223191a6]" started-at="2025-05-07T11:28:42 IST" name="testName" depends-on-groups="test, click" finished-at="2025-05-07T11:28:42 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testName -->

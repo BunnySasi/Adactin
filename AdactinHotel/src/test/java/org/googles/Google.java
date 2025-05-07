@@ -1,6 +1,7 @@
 package org.googles;
 
 import java.io.File;
+
 import java.io.IOException;
 import java.time.Duration;
 
@@ -11,9 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.today.tasks.Base;
 
 public class Google {
 
